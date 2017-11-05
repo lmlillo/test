@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CMP Frontend Test</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Custom style -->
+    <style type="text/css">
+    	.headerName{
+    		height: 54px;
+    	}
+    	h4.headerName{
+    		padding: 20px 0 0 0;
+    		text-align: center;
+    	}
+    	div img.headerArrow, div svg-icon.headerArrow{
+    		margin: -35px 0 0 0;
+    	}
+    	.headerProfile{
+    		background: #868e96;
+    		color: #fff;
+    		margin: 0 0 0 0;
+    	}
+    	.popover.bs-popover-auto[x-placement^="left"] .arrow::after, .popover.bs-popover-auto[x-placement^="left"] .arrow::before, .popover.bs-popover-left .arrow::after, .popover.bs-popover-left .arrow::before{
+    		margin-top: 0;
+            border-left-color:blue;
+    		
+
+    	}
+    	.popover-body.left-profile{
+            background: blue;
+            color: #fff;
+    	}
+        .popover.bs-popover-auto[x-placement^="right"] .arrow::after, .popover.bs-popover-auto[x-placement^="right"] .arrow::before, .popover.bs-popover-right .arrow::after, .popover.bs-popover-right .arrow::before {
+            margin-top: 0rem;
+            border-left-width: 0;
+
+        }
+        .popover{
+            position: relative;
+
+        }
+        .row{
+            margin-bottom: 25px;
+        }
+
+
+    	
+    </style>
+ 
+  </head>
+  <body>
+
+    <div class="container-fluid">
+  		<div class="row">
+		  	<div class="col-12 headerProfile">
+		  		<h4 class="headerName addProfile"></h4>
+            </div>
+        </div>    
+        <div class="row">        
+
+		    
+		     <div class="col-7 offset-2">
+               
+                    <div class="popover bs-popover-left bs-popover-left-docs left-profile">
+                    <div class="arrow"></div>
+                       
+                    <div class="popover-body left-profile">
+                      <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                    </div>
+                </div>
+                  
+  		
+		    </div>
+            <div class="col-2">
+             
+                  <img class="rounded-circle" src="http://images.freeimages.com/images/premium/small-comps/1465/14657807-beautiful-woman-long-hair.jpg" width="64px" alt="Generic placeholder image">
+            </div>
+               
+        </div>
+        <div class="row">
+             <div class="col-2">
+               
+                  <img class="rounded-circle" src="http://images.freeimages.com/images/premium/small-comps/1465/14657807-beautiful-woman-long-hair.jpg" width="64px" alt="Generic placeholder image">
+            </div>           
+            <div class="col-7">
+               
+                <div class="popover bs-popover-right bs-popover-right-docs right-profile">
+                <div class="arrow"></div>   
+                    <div class="popover-body right-profile">
+                      <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                    </div>
+                </div>      
+            </div>
+        </div>
+        <div class="row">
+            <input type="" class="form-control" id="" aria-describedby="" placeholder="Write a message...">
+        </div>
+           
+
+  		</div>
+	</div>
+   
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+             var userJSON= '{"name":"Sophie", "age": 22,"photoURL":"http://images.freeimages.com/images/premium/small-comps/1465/14657807-beautiful-woman-long-hair.jpg", "place":"New York", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."}';
+             var user= JSON.parse(userJSON);
+             /*$('.addProfile').html('<img class="img-fluid rounded-circle mx-auto d-block" src="'+user.photoURL+'" alt="Card image cap"><div class="card-body"><h4 class="card-title">'+user.name+'');*/
+             $('h4.addProfile').append(user.name);
+    </script>
+
+    <!-- Optional JavaScript-->
+
+
+
+  </body>
+</html>
