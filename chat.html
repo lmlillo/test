@@ -12,61 +12,56 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- Custom style -->
     <style type="text/css">
-    	.headerName{
-    		height: 54px;
-    	}
-    	h4.headerName{
-    		padding: 20px 0 0 0;
-    		text-align: center;
-    	}
-    	div img.headerArrow, div svg-icon.headerArrow{
-    		margin: -35px 0 0 0;
-    	}
-    	.headerProfile{
-    		background: #868e96;
-    		color: #fff;
-    		margin: 0 0 0 0;
-    	}
-    	.popover.bs-popover-auto[x-placement^="left"] .arrow::after, .popover.bs-popover-auto[x-placement^="left"] .arrow::before, .popover.bs-popover-left .arrow::after, .popover.bs-popover-left .arrow::before{
-    		margin-top: 0;
+        .headerName{
+            height: 54px;
+        }
+        h4.headerName{
+            padding: 20px 0 0 0;
+            text-align: center;
+        }
+        div img.headerArrow, div svg-icon.headerArrow{
+            margin: -35px 0 0 0;
+        }
+        .headerProfile{
+            background: #868e96;
+            color: #fff;
+            margin: 0 0 0 0;
+        }
+        .popover.bs-popover-auto[x-placement^="left"] .arrow::after, .popover.bs-popover-auto[x-placement^="left"] .arrow::before, .popover.bs-popover-left .arrow::after, .popover.bs-popover-left .arrow::before{
+            margin-top: 0;
             border-left-color:blue;
-    		
-
-    	}
-    	.popover-body.left-profile{
+            
+        }
+        .popover-body.left-profile{
             background: blue;
             color: #fff;
-    	}
+        }
         .popover.bs-popover-auto[x-placement^="right"] .arrow::after, .popover.bs-popover-auto[x-placement^="right"] .arrow::before, .popover.bs-popover-right .arrow::after, .popover.bs-popover-right .arrow::before {
             margin-top: 0rem;
             border-left-width: 0;
-
         }
         .popover{
             position: relative;
-
         }
         .row{
             margin-bottom: 25px;
         }
-
-
-    	
+        
     </style>
  
   </head>
   <body>
 
-    <div class="container-fluid">
-  		<div class="row">
-		  	<div class="col-12 headerProfile">
-		  		<h4 class="headerName addProfile"></h4>
+    <div class="container-fluid" id= "main">
+        <div class="row headerRow">
+            <div class="col-12 headerProfile">
+                <h4 class="headerName addProfile"></h4>
             </div>
         </div>    
         <div class="row justify-content-end">        
 
-		    
-		     <div class="col-7 offset-2">
+            
+             <div class="col-7 offset-2">
                
                     <div class="popover bs-popover-left bs-popover-left-docs left-profile">
                     <div class="arrow"></div>
@@ -76,18 +71,19 @@
                     </div>
                 </div>
                   
-  		
-		    </div>
-            <div class="col-2">
+        
+            </div>
+            <div class="col-3">
              
                   <img class="rounded-circle" src="http://images.freeimages.com/images/premium/small-comps/1465/14657807-beautiful-woman-long-hair.jpg" width="64px" alt="Generic placeholder image">
             </div>
                
         </div>
-        <div class="row">
-             <div class="col-2">
+   
+        <!--<div class="row">
+             <div class="col-3">
                
-                  <img class="rounded-circle" src="http://images.freeimages.com/images/premium/small-comps/1465/14657807-beautiful-woman-long-hair.jpg" width="64px" alt="Generic placeholder image">
+                  <img class="rounded-circle" src="http://images.freeimages.com/images/premium/small-comps/1168/11686411-young-man-wearing-flat-cap-filming-with-old-fashioned-camera.jpg" width="64px" alt="Generic placeholder image">
             </div>           
             <div class="col-7">
                
@@ -98,17 +94,15 @@
                     </div>
                 </div>      
             </div>
-        </div>
-        <div class="row">
+        </div>-->
+    </div>
+    <div class="container-fluid" id="footer">
+
+        <div class="row textArea">
             <input class="form-control" id="chatSender" autofocus type="text"  aria-describedby="" placeholder="Write a message...">
         </div>
-           
-
-
-
-
-  		</div>
-	</div>
+    </div>
+ 
 
 
 
@@ -119,17 +113,70 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+    
+    <!-- Optional JavaScript-->
     <script type="text/javascript">
-             var userJSON= '{"name":"Sophie", "age": 22,"photoURL":"http://images.freeimages.com/images/premium/small-comps/1465/14657807-beautiful-woman-long-hair.jpg", "place":"New York", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."}';
-             var user= JSON.parse(userJSON);
-             /*$('.addProfile').html('<img class="img-fluid rounded-circle mx-auto d-block" src="'+user.photoURL+'" alt="Card image cap"><div class="card-body"><h4 class="card-title">'+user.name+'');*/
-             $('h4.addProfile').append(user.name);
+        var userJSON= '{"name":"Sophie", "age": 22,"photoURL":"http://images.freeimages.com/images/premium/small-comps/1465/14657807-beautiful-woman-long-hair.jpg", "place":"New York", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."}';
+        var user= JSON.parse(userJSON);
+        /*$('.addProfile').html('<img class="img-fluid rounded-circle mx-auto d-block" src="'+user.photoURL+'" alt="Card image cap"><div class="card-body"><h4 class="card-title">'+user.name+'');*/
+        $('h4.addProfile').append(user.name);
+
+        // Quería que mandara el random msg pero lo dejo en html
+        /*$(document).ready(function(){
+            if(sessionStorage){
+                alert(sessionStorage.length);
+                if(sessionStorage.length == 0){
+                    $('.headerRow').append('<div class="row justify-content-end"><div class="col-7 offset-2"><div class="popover bs-popover-left bs-popover-left-docs left-profile"><div class="arrow"></div><div class="popover-body left-profile"><p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p></div></div></div><div class="col-3"><img class="rounded-circle" src="'+user.photoURL+'" width="64px" alt="Generic placeholder image"></div></div>');
+
+                }
+            }else{
+                alert("Sorry, your browser doesn't support SESSION STORAGE");
+            }
+
+        
+        });*/
+
     </script>
 
-    <!-- Optional JavaScript-->
+    <script type="text/javascript">
+        
+    </script>
 
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            // Recoge el texto, lo guarde en variable de sesión y lo envía a pantalla.
+            $("#chatSender").keypress(function(event) {
+                if(event.which == 13) {
 
+                    var numberOfChats= sessionStorage.length;
+                    var msg= $('#chatSender').val();
+                    $('#chatSender').val("");
+                    sessionStorage.setItem("chat"+numberOfChats, msg);
+                    //alert(sessionStorage.getItem("chat"+numberOfChats));
+                    $("#main").append('<div class="row"><div class="col-3"><img class="rounded-circle" src="http://images.freeimages.com/images/premium/small-comps/1168/11686411-young-man-wearing-flat-cap-filming-with-old-fashioned-camera.jpg" width="64px" alt="Generic placeholder image"></div><div class="col-7"><div class="popover bs-popover-right bs-popover-right-docs right-profile"><div class="arrow"></div><div class="popover-body right-profile"><p>'+msg+'</p></div></div></div></div>');
 
+                }
+            });
+        });
+    </script>
+         
+         <script type="text/javascript">
+
+            // Carga todo el chat que hay en variable de sessión.
+            if(sessionStorage){
+                //alert(sessionStorage.length);
+                for(i=0; i<sessionStorage.length; i++){
+                    $("#main").append('<div class="row"><div class="col-3"><img class="rounded-circle" src="http://images.freeimages.com/images/premium/small-comps/1168/11686411-young-man-wearing-flat-cap-filming-with-old-fashioned-camera.jpg" width="64px" alt="Generic placeholder image"></div><div class="col-7"><div class="popover bs-popover-right bs-popover-right-docs right-profile"><div class="arrow"></div><div class="popover-body right-profile"><p>'+sessionStorage.getItem("chat"+i)+'</p></div></div></div></div>');
+
+                }
+
+            }else{
+                alert("Sorry, your browser doesn't support SESSION STORAGE");
+            }
+
+        
+            
+        </script>
   </body>
 </html>
