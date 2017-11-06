@@ -1,0 +1,36 @@
+        .headerName{
+    		height: 30px;
+    	}
+    	h4.headerName{
+    		padding: 20px 0 0 0;
+    		text-align: center;
+    	}
+    	div img.headerArrow, div svg-icon.headerArrow{
+    		margin: -35px 0 0 0;
+    	}
+    	.headerProfile{
+    		background: #868e96;
+    		color: #fff;
+    		margin: 0 0 30px 0;
+    	}
+    	p.place{
+    		color: #DC3545;
+    		
+        }
+        p.photoBaloon{
+            height: 50px; 
+            width:50px;
+            margin-right: 50px;
+            padding-top: 15px;
+            font-size: 0.8em;
+            top: 5px;
+            left: 70%;
+        }
+        .bodyColor{
+            background-color: #868E96;
+        }
+        .buttonColor{
+            background-color: #343A40;
+        }
+
+    	
